@@ -64,14 +64,12 @@
 
 	Author
 	~~~~~~
-	David Barr, aka javidx9, ï¿½OneLoneCoder 2019
+	David Barr, aka javidx9, ©OneLoneCoder 2019
 */
 
 
 #ifndef OLC_PGEX_SOUND_H
 #define OLC_PGEX_SOUND_H
-
-#include <OneLoneCoder/olcPixelGameEngine.h>
 
 #include <istream>
 #include <cstring>

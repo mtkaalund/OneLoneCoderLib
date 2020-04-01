@@ -1,3 +1,24 @@
+# This is not the offical repo of olcPixelGameEngine
+I am **not** the author of olcPixelGameEngine, you will find that [javidx9](http://github.com/OneLoneCoder).
+This is meant to be used as a gitsubmodule with cmake.
+
+## Usage
+First go into your git project
+```bash
+user@local$ git submodule add https://github.com/OneLoneCoderLib OneLoneCoder
+```
+
+In your CMakeLists.txt add following:
+```CMakeLists.txt
+add_subdirectory(OneLoneCoder)
+.
+.
+.
+target_link_libraries(${PROJECT_NAME} olcPixelGameEngine)
+```
+
+
+
 # olcPixelGameEngine
 The official distribution of olcPixelGameEngine, a tool used in javidx9's YouTube videos and projects.
 

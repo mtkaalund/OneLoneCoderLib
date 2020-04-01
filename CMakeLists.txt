@@ -81,3 +81,20 @@ target_link_libraries(olcPGEX_Sound
 	-lstdc++fs
     olcPixelGameEngine
     )
+
+add_library(olcPGEX_PopUpMenu src/Extensions/olcPGEX_PopUpMenu.cc)
+target_compile_features(olcPGEX_PopUpMenu INTERFACE cxx_std_17)
+target_include_directories(olcPGEX_PopUpMenu
+	PUBLIC
+	${CMAKE_CURRENT_SOURCE_DIR}/include/
+	$<BUILD_INTERFACE:${${PROJECT_NAME}}/include>
+	$<INSTALL_INTERFACE:${CMAKE_INSTAL_INCLUDEDIR}>
+	)
+target_link_libraries(olcPGEX_PopUpMenu
+	${CMAKE_THREAD_LIBS_INIT}
+	${X11_X11_LIB}
+	${OPENGL_gl_LIBRARY}
+	${PNG_LIBRARIES}
+	-stdc++fs
+	olcPixelGameEngine
+	)

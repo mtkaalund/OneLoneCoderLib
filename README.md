@@ -5,7 +5,7 @@ This is meant to be used as a gitsubmodule with cmake.
 ## Usage
 First go into your git project
 ```bash
-user@local$ git submodule add https://github.com/OneLoneCoderLib OneLoneCoder
+user@local$ git submodule add https://github.com/mtkaalund/OneLoneCoderLib OneLoneCoder
 ```
 
 In your CMakeLists.txt add following:

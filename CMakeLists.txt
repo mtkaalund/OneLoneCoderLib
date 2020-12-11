@@ -85,6 +85,7 @@ if(USE_OLC_SOUND)
 		${OPENGL_gl_LIBRARY}
 		${PNG_LIBRARIES}
 		-lstdc++fs
+		-lasound
 	    olcPixelGameEngine
 	    )
 endif()
